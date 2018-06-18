@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="fuck.js"></script>
+</head>
+<body>
+    <div id="text"></div>
+    <br/>
+    <button onclick="fuck();">fuck</button>
+
+    <script type="text/javascript">
+        function fuck()
+        {
+            var textView = document.getElementById("text");
+            var worker = new Worker("fuck.js");
+            worker.onmessage = function(data) {
+                textView.innerHTML = data.data;
+            }
+        }
+    </script>
+</body>
+</html>
