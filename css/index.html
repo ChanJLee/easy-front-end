@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
-        h1, h2, h3{
+        /* h1, h2, h3{
             color: aquamarine
         }
 
@@ -20,22 +20,48 @@
 
         p {
             text-indent: -5em
+        } */
+
+        p:first-letter{
+            color: blue;
+            font-size: 40px
+        }
+
+        #fuck {
+            color: red
+        }
+
+        a[href] {
+            color: rgb(30, 216, 176)
+        }
+
+        h1[style="text-decoration: underline"] {
+            color: rgb(38, 199, 38)
+        }
+
+        h1  hh {
+            color: rgb(167, 22, 58)
         }
     </style>
 </head>
 <body>
-    <h1>fuck</h1>
+    <a href="www.baidu.com">百度</a>
     <strong>strong</strong>
     <p><strong>p strong</strong></p>
     <p>hahahahahahahhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
     <div>
-        <h1>foo</h1>
+        <h1 style="text-decoration: underline">underline<p><hh>this is haha</hh></p></h1>
         <h2>foo</h2>
         <h3>foo</h3>
+        <hh>hahah</hh>
+        <p>hello world</p>
     </div>
     <br>
-    <div id="foo">
+    <div id="fuck">
         <h2>foo</h2>
+    </div>
+    <div id="fuck">
+            <h2>foo</h2>
     </div>
 </body>
 </html>
