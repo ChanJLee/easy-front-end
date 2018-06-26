@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="text">
+    </div>
+    <br>
+    <button onclick="fuck();">fuck</button>
+
+    <script type="text/javascript">
+        function fuck()
+        {
+            var textView = document.getElementById("text");
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(renderPosition);
+                return;
+            }
+
+            textView.innerHTML = "不支持获取位置信息";
+        }
+
+        function renderPosition(position)
+        {
+            var textView = document.getElementById("text");
+            textView.innerHTML="纬度: " + position.coords.latitude + 
+    "<br>经度: " + position.coords.longitude;   
+        }
+    </script>
+</body>
+</html>
